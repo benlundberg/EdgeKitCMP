@@ -13,6 +13,6 @@ abstract class BaseUiExceptionHandler {
     protected abstract fun evaluateException(e: Throwable): OneTimeEvent?
 
     protected fun trackException(e: Throwable) {
-        // TODO: Track exception in crashlytics
+        // TODO: send to analytics / crash reporting
     }
 }
