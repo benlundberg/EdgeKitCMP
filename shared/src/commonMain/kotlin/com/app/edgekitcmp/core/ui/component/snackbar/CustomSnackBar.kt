@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.component.snackbar
+package com.app.edgekitcmp.core.ui.component.snackbar
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -22,8 +22,8 @@ import com.adamglin.phosphoricons.regular.Info
 import com.adamglin.phosphoricons.regular.Warning
 import com.adamglin.phosphoricons.regular.WarningCircle
 import com.adamglin.phosphoricons.regular.X
-import com.app.edgekitcmp.ui.theme.AppTheme
-import com.app.edgekitcmp.ui.theme.blackColor
+import com.app.edgekitcmp.core.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.theme.blackColor
 
 private val SNACKBAR_HEIGHT = 56.dp
 

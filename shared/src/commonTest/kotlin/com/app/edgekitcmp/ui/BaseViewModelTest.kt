@@ -1,7 +1,7 @@
 package com.app.edgekitcmp.ui
 
-import com.app.edgekitcmp.ui.error.BaseUiExceptionHandler
-import com.app.edgekitcmp.ui.model.OneTimeEvent
+import com.app.edgekitcmp.core.ui.error.BaseUiExceptionHandler
+import com.app.edgekitcmp.core.ui.model.OneTimeEvent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
@@ -23,8 +23,8 @@ import kotlin.test.assertTrue
 class BaseViewModelTest {
 
     private class CounterViewModel(
-        handler: BaseUiExceptionHandler? = null,
-    ) : BaseViewModel<Int>(0, handler) {
+        handler: com.app.edgekitcmp.core.ui.error.BaseUiExceptionHandler? = null,
+    ) : com.app.edgekitcmp.core.ui.BaseViewModel<Int>(0, handler) {
         fun increment() = setState { it + 1 }
         fun failWith(t: Throwable) = launch { throw t }
         override fun onUnhandledError(t: Throwable) {
@@ -34,7 +34,7 @@ class BaseViewModelTest {
         val reported = mutableListOf<Throwable>()
     }
 
-    private object TestEvent : OneTimeEvent
+    private object TestEvent : com.app.edgekitcmp.core.ui.model.OneTimeEvent
 
     @BeforeTest fun setUp() = Dispatchers.setMain(UnconfinedTestDispatcher())
     @AfterTest fun tearDown() = Dispatchers.resetMain()
@@ -57,7 +57,7 @@ class BaseViewModelTest {
 
     @Test
     fun `unhandled error becomes a one-time event`() = runTest {
-        val handler = object : BaseUiExceptionHandler() {
+        val handler = object : com.app.edgekitcmp.core.ui.error.BaseUiExceptionHandler() {
             override fun evaluateException(e: Throwable) = TestEvent
         }
         val vm = CounterViewModel(handler)

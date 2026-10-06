@@ -8,8 +8,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.compose.rememberNavController
 import com.app.edgekitcmp.features.app.di.appModules
 import com.app.edgekitcmp.features.settings.domain.model.ThemeMode
-import com.app.edgekitcmp.ui.nav.NavigationComponent
-import com.app.edgekitcmp.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.nav.NavigationComponent
+import com.app.edgekitcmp.core.ui.theme.AppTheme
 import org.koin.compose.KoinApplication
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.dsl.koinConfiguration

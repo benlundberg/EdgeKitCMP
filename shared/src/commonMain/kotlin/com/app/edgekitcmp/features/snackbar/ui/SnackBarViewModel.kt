@@ -1,9 +1,9 @@
 package com.app.edgekitcmp.features.snackbar.ui
 
 import com.app.edgekitcmp.features.snackbar.ui.model.SnackBarUiState
-import com.app.edgekitcmp.ui.BaseViewModel
-import com.app.edgekitcmp.ui.component.snackbar.SnackBarType
-import com.app.edgekitcmp.ui.model.BaseEvent
+import com.app.edgekitcmp.core.ui.BaseViewModel
+import com.app.edgekitcmp.core.ui.component.snackbar.SnackBarType
+import com.app.edgekitcmp.core.ui.model.BaseEvent
 
 class SnackBarViewModel : BaseViewModel<SnackBarUiState>(SnackBarUiState()) {
 

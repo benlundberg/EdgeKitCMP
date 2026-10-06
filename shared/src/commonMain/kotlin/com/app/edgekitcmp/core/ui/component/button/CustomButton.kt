@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.component.button
+package com.app.edgekitcmp.core.ui.component.button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,8 +23,8 @@ import androidx.compose.ui.unit.dp
 import com.adamglin.phosphoricons.RegularGroup
 import com.adamglin.phosphoricons.regular.Alarm
 import com.adamglin.phosphoricons.regular.Axe
-import com.app.edgekitcmp.ui.theme.AppTheme
-import com.app.edgekitcmp.ui.theme.bold
+import com.app.edgekitcmp.core.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.theme.bold
 
 private const val BUTTON_HEIGHT = 56
 
@@ -86,7 +86,8 @@ fun CustomButton(
     ) {
         leadingIcon?.let { icon ->
             icon()
-            Spacer(modifier = Modifier.width(AppTheme.spacings.s))
+            Spacer(modifier = Modifier.width(
+                AppTheme.spacings.s))
         }
         Text(
             text = label.uppercase(),
@@ -94,7 +95,8 @@ fun CustomButton(
             textAlign = TextAlign.Center
         )
         trailingIcon?.let { icon ->
-            Spacer(modifier = Modifier.width(AppTheme.spacings.s))
+            Spacer(modifier = Modifier.width(
+                AppTheme.spacings.s))
             icon()
         }
     }
@@ -105,7 +107,9 @@ fun CustomButton(
 private fun CustomButtonsLightPreview() {
     AppTheme {
         Column(
-            modifier = Modifier.padding(AppTheme.spacings.m),
+            modifier = Modifier.padding(
+                AppTheme.spacings.m
+            ),
             verticalArrangement = Arrangement.spacedBy(AppTheme.spacings.m)
         ) {
             CustomButton(

@@ -13,10 +13,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.app.edgekitcmp.features.home.ui.model.HomeUiState
 import com.app.edgekitcmp.features.home.ui.model.UiHomeOptionModel
 import com.app.edgekitcmp.features.home.ui.model.UiHomeOptionType
-import com.app.edgekitcmp.ui.component.button.CustomButton
-import com.app.edgekitcmp.ui.component.scaffold.CustomScaffold
-import com.app.edgekitcmp.ui.preview.BasePreview
-import com.app.edgekitcmp.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.component.button.CustomButton
+import com.app.edgekitcmp.core.ui.component.scaffold.CustomScaffold
+import com.app.edgekitcmp.core.ui.preview.BasePreview
+import com.app.edgekitcmp.core.ui.theme.AppTheme
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

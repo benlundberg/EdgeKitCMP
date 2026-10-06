@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.component.snackbar
+package com.app.edgekitcmp.core.ui.component.snackbar
 
 import androidx.compose.material3.SnackbarDuration
 import androidx.compose.runtime.Composable
@@ -6,8 +6,8 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.repeatOnLifecycle
-import com.app.edgekitcmp.ui.model.BaseEvent
-import com.app.edgekitcmp.ui.model.OneTimeEvent
+import com.app.edgekitcmp.core.ui.model.BaseEvent
+import com.app.edgekitcmp.core.ui.model.OneTimeEvent
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 

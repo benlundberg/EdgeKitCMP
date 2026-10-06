@@ -1,6 +1,6 @@
-package com.app.edgekitcmp.ui.error
+package com.app.edgekitcmp.core.ui.error
 
-import com.app.edgekitcmp.ui.model.OneTimeEvent
+import com.app.edgekitcmp.core.ui.model.OneTimeEvent
 
 abstract class BaseUiExceptionHandler {
 

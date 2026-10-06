@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.theme
+package com.app.edgekitcmp.core.ui.theme
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Immutable

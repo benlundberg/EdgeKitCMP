@@ -1,7 +1,7 @@
 package com.app.edgekitcmp.features.settings.ui.error
 
-import com.app.edgekitcmp.ui.error.BaseUiExceptionHandler
-import com.app.edgekitcmp.ui.model.OneTimeEvent
+import com.app.edgekitcmp.core.ui.error.BaseUiExceptionHandler
+import com.app.edgekitcmp.core.ui.model.OneTimeEvent
 
 class SettingsUiExceptionHandler : BaseUiExceptionHandler() {
 

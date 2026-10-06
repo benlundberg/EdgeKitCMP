@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.component.snackbar
+package com.app.edgekitcmp.core.ui.component.snackbar
 
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.runtime.Composable

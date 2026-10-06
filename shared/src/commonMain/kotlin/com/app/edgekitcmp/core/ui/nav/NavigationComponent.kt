@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.nav
+package com.app.edgekitcmp.core.ui.nav
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController

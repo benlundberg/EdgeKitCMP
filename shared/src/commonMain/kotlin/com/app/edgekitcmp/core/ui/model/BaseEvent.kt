@@ -1,6 +1,6 @@
-package com.app.edgekitcmp.ui.model
+package com.app.edgekitcmp.core.ui.model
 
-import com.app.edgekitcmp.ui.component.snackbar.SnackBarType
+import com.app.edgekitcmp.core.ui.component.snackbar.SnackBarType
 
 sealed class BaseEvent : OneTimeEvent {
     data class ShowMessage(val message: String, val type: SnackBarType) : BaseEvent()

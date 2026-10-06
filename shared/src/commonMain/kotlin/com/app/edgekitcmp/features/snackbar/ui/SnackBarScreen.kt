@@ -7,10 +7,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.app.edgekitcmp.ui.component.button.CustomButton
-import com.app.edgekitcmp.ui.component.scaffold.CustomScaffold
-import com.app.edgekitcmp.ui.component.snackbar.SnackBarType
-import com.app.edgekitcmp.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.component.button.CustomButton
+import com.app.edgekitcmp.core.ui.component.scaffold.CustomScaffold
+import com.app.edgekitcmp.core.ui.component.snackbar.SnackBarType
+import com.app.edgekitcmp.core.ui.theme.AppTheme
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

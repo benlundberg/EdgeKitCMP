@@ -8,7 +8,7 @@
 
 - **Kotlin Multiplatform (KMP):** Code sharing across Android and iOS platforms with clean separation of concerns.
 - **Compose Multiplatform & Material 3:** Declarative UI built with Jetpack Compose, Material 3 theming, and Phosphor Icons.
-- **Unidirectional Data Flow (UDF):** Powered by a robust [`BaseViewModel`](file:///Users/benjaminlundberg/Projects/Android/EdgeKitCMP/shared/src/commonMain/kotlin/com/app/edgekitcmp/ui/BaseViewModel.kt) supporting atomic state updates (`StateFlow`) and one-time UI events (navigation, snackbars).
+- **Unidirectional Data Flow (UDF):** Powered by a robust [`BaseViewModel`](file:///Users/benjaminlundberg/Projects/Android/EdgeKitCMP/shared/src/commonMain/kotlin/com/app/edgekitcmp/core/ui/BaseViewModel.kt) supporting atomic state updates (`StateFlow`) and one-time UI events (navigation, snackbars).
 - **Dependency Injection:** Integrated via **Koin** (`koin-compose-viewmodel`) for seamless multiplatform dependency resolution.
 - **Local Persistence:** Type-safe local data persistence using **Multiplatform Settings** and **Kotlinx Serialization**.
 - **Modular Architecture:** Organized into feature modules (`app`, `home`, `settings`) with clean domain, data, and presentation layers.

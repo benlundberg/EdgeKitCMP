@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.component.topbar
+package com.app.edgekitcmp.core.ui.component.topbar
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Icon
@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.adamglin.phosphoricons.RegularGroup
 import com.adamglin.phosphoricons.regular.ArrowLeft
-import com.app.edgekitcmp.ui.theme.AppTheme
-import com.app.edgekitcmp.ui.theme.bold
+import com.app.edgekitcmp.core.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.theme.bold
 
 @Composable
 fun CustomTopBar(

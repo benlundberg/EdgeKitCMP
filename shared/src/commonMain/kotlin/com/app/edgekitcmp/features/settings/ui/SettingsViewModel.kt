@@ -4,8 +4,8 @@ import com.app.edgekitcmp.features.settings.domain.SettingsRepository
 import com.app.edgekitcmp.features.settings.domain.model.ThemeMode
 import com.app.edgekitcmp.features.settings.ui.error.SettingsUiExceptionHandler
 import com.app.edgekitcmp.features.settings.ui.model.SettingsUiState
-import com.app.edgekitcmp.ui.BaseViewModel
-import com.app.edgekitcmp.ui.error.BaseUiExceptionHandler
+import com.app.edgekitcmp.core.ui.BaseViewModel
+import com.app.edgekitcmp.core.ui.error.BaseUiExceptionHandler
 
 class SettingsViewModel(
     private val settingsRepository: SettingsRepository,

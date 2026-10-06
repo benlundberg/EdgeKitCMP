@@ -1,9 +1,9 @@
-package com.app.edgekitcmp.ui
+package com.app.edgekitcmp.core.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.app.edgekitcmp.ui.error.BaseUiExceptionHandler
-import com.app.edgekitcmp.ui.model.OneTimeEvent
+import com.app.edgekitcmp.core.ui.error.BaseUiExceptionHandler
+import com.app.edgekitcmp.core.ui.model.OneTimeEvent
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

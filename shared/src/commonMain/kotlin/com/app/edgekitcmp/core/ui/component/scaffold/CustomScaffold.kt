@@ -1,4 +1,4 @@
-package com.app.edgekitcmp.ui.component.scaffold
+package com.app.edgekitcmp.core.ui.component.scaffold
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -9,12 +9,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.app.edgekitcmp.ui.component.snackbar.CustomSnackBarEffect
-import com.app.edgekitcmp.ui.component.snackbar.CustomSnackBarHost
-import com.app.edgekitcmp.ui.component.snackbar.CustomSnackBarHostState
-import com.app.edgekitcmp.ui.component.topbar.CustomTopBar
-import com.app.edgekitcmp.ui.model.OneTimeEvent
-import com.app.edgekitcmp.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.component.snackbar.CustomSnackBarEffect
+import com.app.edgekitcmp.core.ui.component.snackbar.CustomSnackBarHost
+import com.app.edgekitcmp.core.ui.component.snackbar.CustomSnackBarHostState
+import com.app.edgekitcmp.core.ui.component.topbar.CustomTopBar
+import com.app.edgekitcmp.core.ui.model.OneTimeEvent
+import com.app.edgekitcmp.core.ui.theme.AppTheme
 import kotlinx.coroutines.flow.Flow
 
 @Composable
@@ -51,7 +51,9 @@ fun CustomScaffold(
             }
         },
         snackbarHost = {
-            CustomSnackBarHost(snackBarHostState = snackBarHostState)
+            CustomSnackBarHost(
+                snackBarHostState = snackBarHostState
+            )
         },
         floatingActionButton = { floatingActionButton() },
     ) { innerPadding ->

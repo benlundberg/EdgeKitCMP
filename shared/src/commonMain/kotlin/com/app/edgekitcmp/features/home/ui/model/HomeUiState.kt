@@ -1,6 +1,6 @@
 package com.app.edgekitcmp.features.home.ui.model
 
-import com.app.edgekitcmp.ui.model.ViewState
+import com.app.edgekitcmp.core.ui.model.ViewState
 
 data class HomeUiState(
     val options: List<UiHomeOptionModel> = listOf(

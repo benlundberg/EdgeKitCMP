@@ -17,9 +17,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.app.edgekitcmp.features.settings.domain.model.ThemeMode
 import com.app.edgekitcmp.features.settings.ui.component.label
-import com.app.edgekitcmp.ui.component.scaffold.CustomScaffold
-import com.app.edgekitcmp.ui.preview.BasePreview
-import com.app.edgekitcmp.ui.theme.AppTheme
+import com.app.edgekitcmp.core.ui.component.scaffold.CustomScaffold
+import com.app.edgekitcmp.core.ui.preview.BasePreview
+import com.app.edgekitcmp.core.ui.theme.AppTheme
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
