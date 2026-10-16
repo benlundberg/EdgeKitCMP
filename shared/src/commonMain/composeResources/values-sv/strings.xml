@@ -1,0 +1,10 @@
+<resources>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Ljust</string>
+    <string name="theme_dark">Mörkt</string>
+    <string name="settings_language_system">System</string>
+    <string name="settings_language_title">Språk</string>
+    <string name="settings_theme_title">Tema</string>
+    <string name="settings_title">Inställningar</string>
+    <string name="home_title">Hem</string>
+</resources>

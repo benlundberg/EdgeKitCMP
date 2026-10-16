@@ -2,4 +2,9 @@
     <string name="theme_system">System</string>
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
+    <string name="settings_language_system">System</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_title">Settings</string>
+    <string name="home_title">Home</string>
 </resources>

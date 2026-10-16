@@ -14,9 +14,13 @@ import com.app.edgekitcmp.features.home.ui.model.HomeUiState
 import com.app.edgekitcmp.features.home.ui.model.UiHomeOptionModel
 import com.app.edgekitcmp.features.home.ui.model.UiHomeOptionType
 import com.app.edgekitcmp.core.ui.component.button.CustomButton
+import com.app.edgekitcmp.core.ui.component.label.asString
 import com.app.edgekitcmp.core.ui.component.scaffold.CustomScaffold
 import com.app.edgekitcmp.core.ui.preview.BasePreview
 import com.app.edgekitcmp.core.ui.theme.AppTheme
+import com.app.edgekitcmp.resources.Res
+import com.app.edgekitcmp.resources.home_title
+import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
@@ -27,7 +31,7 @@ fun HomeScreen(
     val state by homeViewModel.stateFlow.collectAsState()
 
     CustomScaffold(
-        title = "Home"
+        title = stringResource(Res.string.home_title)
     ) {
         HomeContent(
             options = state.options,
@@ -45,7 +49,7 @@ private fun HomeContent(options: List<UiHomeOptionModel>, onClick: (UiHomeOption
     ) {
         items(options) { option ->
             CustomButton(
-                label = option.title,
+                label = option.title.asString(),
                 onClick = {
                     onClick(option.type)
                 },

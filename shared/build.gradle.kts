@@ -70,6 +70,10 @@ kotlin {
     }
 }
 
+compose.resources {
+    packageOfResClass = "com.app.edgekitcmp.resources"   // optional, but keeps imports predictable
+}
+
 dependencies {
     androidRuntimeClasspath(libs.compose.uiTooling)
 }

@@ -19,6 +19,7 @@ private val darkColorPalette = darkColorScheme(
     onPrimary = white,
     onBackground = white,
     onSecondary = white,
+    surfaceContainer = black
 )
 
 private val lightColorPalette = lightColorScheme(
@@ -31,6 +32,7 @@ private val lightColorPalette = lightColorScheme(
     onSurface = black,
     onBackground = black,
     onSecondary = white,
+    surfaceContainer = white
 )
 
 val LocalIsDarkTheme = staticCompositionLocalOf<Boolean> {

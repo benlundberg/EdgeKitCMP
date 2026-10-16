@@ -8,10 +8,10 @@ import kotlinx.coroutines.flow.map
 
 class AppViewModel(
     settingsRepository: SettingsRepository
-) : BaseViewModel<AppUiState>(AppUiState(settingsRepository.settings.value.themeMode)) {
+) : BaseViewModel<AppUiState>(AppUiState(settingsRepository.settings.value.themeMode, settingsRepository.settings.value.appLanguage)) {
 
     init {
-        settingsRepository.settings.map { it.themeMode }.distinctUntilChanged()
-            .collectToState { state -> copy(themeMode = state) }
+        settingsRepository.settings.map { it.themeMode to it.appLanguage }.distinctUntilChanged()
+            .collectToState { state -> copy(themeMode = state.first, appLanguage = state.second) }
     }
 }

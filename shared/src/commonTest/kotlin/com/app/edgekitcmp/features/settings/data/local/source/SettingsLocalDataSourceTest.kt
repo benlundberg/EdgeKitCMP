@@ -1,5 +1,6 @@
 package com.app.edgekitcmp.features.settings.data.local.source
 
+import com.app.edgekitcmp.features.settings.domain.model.AppLanguage
 import com.app.edgekitcmp.features.settings.domain.model.ThemeMode
 import com.russhwolf.settings.MapSettings
 import kotlinx.coroutines.test.runTest
@@ -35,5 +36,20 @@ class SettingsLocalDataSourceTest {
         val storage = MapSettings().apply { putString("settings", """{"themeMode":"Sepia"}""") }
         val source = SettingsLocalDataSourceImpl(storage)
         assertEquals(ThemeMode.System, source.settingsItem.value.themeMode)
+    }
+
+    @Test
+    fun `old stored JSON without a language decodes to System`() {
+        val storage = MapSettings().apply { putString("settings", """{"themeMode":"Dark"}""") }
+        val item = SettingsLocalDataSourceImpl(storage).settingsItem.value
+
+        assertEquals(ThemeMode.Dark, item.themeMode)
+        assertEquals(AppLanguage.System, item.appLanguage)
+    }
+
+    @Test
+    fun `unknown stored language falls back to System`() {
+        val storage = MapSettings().apply { putString("settings", """{"appLanguage":"Klingon"}""") }
+        assertEquals(AppLanguage.System, SettingsLocalDataSourceImpl(storage).settingsItem.value.appLanguage)
     }
 }
