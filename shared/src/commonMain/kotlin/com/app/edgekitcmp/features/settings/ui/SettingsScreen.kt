@@ -110,15 +110,13 @@ private fun SettingsContent(
                         .padding(AppTheme.spacings.m),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    val isSelected = appLanguage == language
-
                     Text(
                         modifier = Modifier.weight(1f),
                         text = language.label(),
                         style = MaterialTheme.typography.bodyLarge
                     )
 
-                    if (isSelected) {
+                    if (appLanguage == language) {
                         Icon(PhosphorIcons.Regular.Check, null)
                     }
                 }
